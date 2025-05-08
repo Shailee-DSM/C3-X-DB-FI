@@ -1,0 +1,742 @@
+id: '153bf2d9-0087-4621-bd7d-364f8803abfb'
+name: 'ADW_AWS_Parquet'
+appVersion: '1.4.0'
+timestamp: '2025-05-08T09:28:42+00:00'
+sourceObjects:
+  - name: 'CREDITCARD'
+    terms:
+      - name: 'creditcardid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'cardtype'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'cardnumber'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'expmonth'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'expyear'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+          attributes:
+            - key: 'IsAdjustedToUTC'
+              value: 'false'
+      - name: 'modifieddate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'dt'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        attributes:
+          - key: 'PartitionOrder'
+            value: '1'
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: false
+    objectType: {}
+  - name: 'CURRENCY'
+    terms:
+      - name: 'currencycode'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'name'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'modifieddate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'dt'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        attributes:
+          - key: 'PartitionOrder'
+            value: '1'
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: false
+    objectType: {}
+  - name: 'CURRENCYRATE'
+    terms:
+      - name: 'currencyrateid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'currencyratedate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'fromcurrencycode'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'tocurrencycode'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'averagerate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 19
+          scale: 4
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 19
+          scale: 4
+      - name: 'endofdayrate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 19
+          scale: 4
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 19
+          scale: 4
+      - name: 'modifieddate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'dt'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        attributes:
+          - key: 'PartitionOrder'
+            value: '1'
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: false
+    objectType: {}
+  - name: 'CUSTOMER'
+    terms:
+      - name: 'customerid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'personid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'storeid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'territoryid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'accountnumber'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'rowguid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'modifieddate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'dt'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        attributes:
+          - key: 'PartitionOrder'
+            value: '1'
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: false
+    objectType: {}
+  - name: 'SALESORDERDETAIL'
+    terms:
+      - name: 'salesorderid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'salesorderdetailid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'carriertrackingnumber'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'orderqty'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'productid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'specialofferid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'unitprice'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 19
+          scale: 4
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 19
+          scale: 4
+      - name: 'unitpricediscount'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 19
+          scale: 4
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 19
+          scale: 4
+      - name: 'linetotal'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 38
+          scale: 6
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 38
+          scale: 6
+      - name: 'rowguid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'modifieddate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'dt'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        attributes:
+          - key: 'PartitionOrder'
+            value: '1'
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: false
+    objectType: {}
+  - name: 'SALESORDERHEADER'
+    terms:
+      - name: 'salesorderid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'revisionnumber'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'orderdate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'duedate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'shipdate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'status'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'onlineorderflag'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'salesordernumber'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'purchaseordernumber'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'accountnumber'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'customerid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'salespersonid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'territoryid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'billtoaddressid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'shiptoaddressid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'shipmethodid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'creditcardid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'creditcardapprovalcode'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'currencyrateid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'subtotal'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 19
+          scale: 4
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 19
+          scale: 4
+      - name: 'taxamt'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 19
+          scale: 4
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 19
+          scale: 4
+      - name: 'freight'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 19
+          scale: 4
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 19
+          scale: 4
+      - name: 'totaldue'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 19
+          scale: 4
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 19
+          scale: 4
+      - name: 'comment'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'rowguid'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'modifieddate'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'timestamp'
+          isNullable: true
+      - name: 'dt'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        attributes:
+          - key: 'PartitionOrder'
+            value: '1'
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: false
+    objectType: {}
+sourceSystem:
+  type: 'Parquet'

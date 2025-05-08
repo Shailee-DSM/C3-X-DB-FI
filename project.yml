@@ -5,3 +5,8 @@ version: 'v1.5'
 configuration:
   id: 'biGENIUS.Implementation.Generator.Stage.Spark.Databricks.File'
   version: '1.8.0'
+sourceSystems:
+  - id: '82095b99-600c-422a-a5c1-5f5492c10e69'
+    name: 'ADW'
+    description: 'begenius discovery - file'
+    sourceSystemTypeId: 'c5e55725-184f-4c60-a22d-70cb5d6fe513'
