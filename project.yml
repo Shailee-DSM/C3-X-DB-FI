@@ -9,4 +9,5 @@ sourceSystems:
   - id: '82095b99-600c-422a-a5c1-5f5492c10e69'
     name: 'ADW'
     description: 'begenius discovery - file'
+    activeDiscovery: '153bf2d9-0087-4621-bd7d-364f8803abfb'
     sourceSystemTypeId: 'c5e55725-184f-4c60-a22d-70cb5d6fe513'

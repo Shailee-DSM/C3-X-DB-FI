@@ -1,0 +1,214 @@
+id: '6ee9fc98-5103-4f64-a728-4b01bffe8f23'
+name: 'CURRENCYRATE'
+description: 'Generated Model Object from CURRENCYRATE'
+modelObjectTypeId: '5a74b513-9166-4fd4-96c4-4062356fc4a4'
+terms:
+  - id: 'd2b289eb-4afc-438d-bd1f-9681c96128aa'
+    name: 'BG_SourceFilePath'
+    description: 'Default term, which stores the name of theinput file'
+    defaultTermId: 'a7c57cb0-fe9d-47d7-97f7-afa232f75dc1'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '65b4f9de-7264-4b64-a9dc-784a5c1ab606'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '4f54a414-9203-478e-90ab-9dd4e0108561'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '442351e9-05e0-458e-a146-82e97bed2f23'
+    name: 'BG_IncrementalFilter'
+    description: 'Default term for incremental load'
+    defaultTermId: 'f70ffce7-44ad-4d1a-98fd-01854032b15f'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'adf8e79f-24e0-4b81-89f2-ec71569dd640'
+  - id: '0e01b0a6-4105-4392-ade6-8ed2a79bfc63'
+    name: 'BG_DataflowName'
+    description: 'Default term for incremental load'
+    defaultTermId: 'af496643-6176-472a-8abe-b6df2e13a2fb'
+    hiddenInSource: true
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '9b08875a-b437-41c9-b023-dada86d6e827'
+    name: 'BG_ID'
+    description: 'Default term for surrogate key of increment table'
+    defaultTermId: 'e8bfb245-78ae-42cc-93ca-ebb54f606720'
+    hiddenInSource: true
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '3ea7a252-6878-4db5-9994-72fd3dae2075'
+  - id: '0f610293-b19c-47a2-86e6-82684740abe4'
+    name: 'BG_DataflowSetName'
+    description: 'Default term for incremental load'
+    defaultTermId: '3024ca99-e262-4d16-962f-23fb03943dee'
+    hiddenInSource: true
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'd054db35-b67c-423f-9ca7-fc7c8b328e16'
+    name: 'currencyrateid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'd5b6ee5b-a3d4-4e1d-a8f6-84b8c2864eab'
+    name: 'currencyratedate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '9dbe5b25-49df-4973-9dd4-0663eeb1d3ff'
+    name: 'fromcurrencycode'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '5e7ed070-9685-4978-beb5-942b98b1ba57'
+    name: 'tocurrencycode'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'e1439e29-a1b1-4a40-a4ea-472bf4d64588'
+    name: 'averagerate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
+      precision: 19
+      scale: 4
+  - id: '251de199-f0d7-4ef8-a4e1-82eaab9e65d8'
+    name: 'endofdayrate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
+      precision: 19
+      scale: 4
+  - id: 'be0cb988-7606-4410-affa-798919563262'
+    name: 'modifieddate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: 'f6bef55b-bed6-4a13-95e3-73e198ad02fb'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+dataflows:
+  - id: 'b7e4d711-449e-455a-9c59-f68dbc7760fa'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '6a3f5e89-af41-4656-a2ed-bc4c410484fe'
+        name: 'Set1'
+        dataflowModelObjects:
+          - id: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02'
+            alias: 's1'
+            sourceModelObjectId: '077b9c2f-5be8-40c5-9661-fa64d1703253'
+        termMappings:
+          - termId: 'd2b289eb-4afc-438d-bd1f-9681c96128aa'
+          - termId: '65b4f9de-7264-4b64-a9dc-784a5c1ab606'
+          - termId: '4f54a414-9203-478e-90ab-9dd4e0108561'
+          - termId: '442351e9-05e0-458e-a146-82e97bed2f23'
+          - termId: '0e01b0a6-4105-4392-ade6-8ed2a79bfc63'
+          - termId: '9b08875a-b437-41c9-b023-dada86d6e827'
+          - termId: '0f610293-b19c-47a2-86e6-82684740abe4'
+          - expression: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02.1ef31ae9-5081-4790-9002-e0ef4c42ebc9'
+            termId: 'd054db35-b67c-423f-9ca7-fc7c8b328e16'
+          - expression: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02.8ed6bc0d-829a-42fa-bb3d-35cb6547940e'
+            termId: 'd5b6ee5b-a3d4-4e1d-a8f6-84b8c2864eab'
+          - expression: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02.e8c46f9e-3a32-405b-990c-b1737bdb2222'
+            termId: '9dbe5b25-49df-4973-9dd4-0663eeb1d3ff'
+          - expression: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02.b5dfc4ce-c33e-4468-8575-5dc894071400'
+            termId: '5e7ed070-9685-4978-beb5-942b98b1ba57'
+          - expression: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02.50683266-7640-4ae4-8935-402f1a84657d'
+            termId: 'e1439e29-a1b1-4a40-a4ea-472bf4d64588'
+          - expression: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02.74058a65-9af7-4d69-986c-7d859f70d58c'
+            termId: '251de199-f0d7-4ef8-a4e1-82eaab9e65d8'
+          - expression: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02.a4a08250-c93e-44fd-98a3-171aef1bea7d'
+            termId: 'be0cb988-7606-4410-affa-798919563262'
+          - expression: 'e3a1cc45-f714-4491-9bb9-53e3812e5b02.c72ee7f1-7f6c-47a4-b696-08775dd4e852'
+            termId: 'f6bef55b-bed6-4a13-95e3-73e198ad02fb'
