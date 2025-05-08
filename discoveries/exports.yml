@@ -1,1 +1,16 @@
-[]
+- id: '6d5869ee-5e02-4a50-80bd-0afa7bbcdad5'
+  name: 'PRJ_ADW_FI'
+  exportedAt: '2025-05-08T18:01:06+05:30'
+  exportedModelObjects:
+    - hash: 'd260ddcb7b32198758c710e9d77b6338'
+      modelObjectId: '092513f5-76ef-4e78-992e-f66d58b75244'
+    - hash: 'c08b2a88a37d8e508451af1af0a8c7d2'
+      modelObjectId: '6ee9fc98-5103-4f64-a728-4b01bffe8f23'
+    - hash: '49db2f3a5ff2f2924f2b0eb58ec63ecd'
+      modelObjectId: '8fc49b98-b920-4059-9dfe-0cea54eba44d'
+    - hash: '0a22200457e5e78178f2d840fbc18e7a'
+      modelObjectId: 'cad64eb7-45ee-42c2-a89b-82fd61e8b37d'
+    - hash: 'af6b095079b0f8f5c1f17306703d222d'
+      modelObjectId: 'd8872b92-2172-4b5e-b347-5b1a98721d54'
+    - hash: '83f440394343079f575d4681c688265a'
+      modelObjectId: 'e2222868-222f-440c-9d7c-95508f1098c9'
