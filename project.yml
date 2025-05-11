@@ -11,6 +11,10 @@ sourceSystems:
     description: 'begenius discovery - file'
     activeDiscovery: '153bf2d9-0087-4621-bd7d-364f8803abfb'
     sourceSystemTypeId: 'c5e55725-184f-4c60-a22d-70cb5d6fe513'
+  - id: 'a113d9bc-e379-44d2-907c-5f2efb66de3c'
+    name: 'CRM'
+    description: ''
+    sourceSystemTypeId: 'c5e55725-184f-4c60-a22d-70cb5d6fe513'
 propertyValues:
   - propertyId: '59eca19a-3bec-4169-85fd-41331f6fac3a'
     value: 'true'
