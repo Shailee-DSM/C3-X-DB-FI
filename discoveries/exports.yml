@@ -14,3 +14,9 @@
       modelObjectId: 'd8872b92-2172-4b5e-b347-5b1a98721d54'
     - hash: '83f440394343079f575d4681c688265a'
       modelObjectId: 'e2222868-222f-440c-9d7c-95508f1098c9'
+- id: '17db58dd-4966-48e2-9d2e-c3bf59dfa5ee'
+  name: 'PRJ_CRM_FI'
+  exportedAt: '2025-05-11T23:11:17+05:30'
+  exportedModelObjects:
+    - hash: '035296b3e06434e5c6bf67898b9dd170'
+      modelObjectId: '0d3c687f-ead9-46b3-84e5-5c90e32c9962'
